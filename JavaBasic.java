@@ -77,20 +77,21 @@ import java.util.*;
 
 public class JavaBasic {
     public static void main (String arg[]){
-        Scanner sc= new Scanner(System.in);
-        System.out.println("Enter value of Income :");
-        int a=sc.nextInt();
-        int tax;
-        if(a<50000){
-            tax=0;           
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter value of Income :");
+            int a=sc.nextInt();
+            int tax;
+            if(a<50000){
+                tax=0;           
+            }
+            else if(a>=50000 && a<100000){
+               tax=(int)(a*0.2);
+            }
+            else {
+               tax=(int)(a*0.3);
+            }
+            System.out.println("YOur tax : "+tax);
         }
-        else if(a>=50000 && a<100000){
-           tax=(int)(a*0.2);
-        }
-        else {
-           tax=(int)(a*0.3);
-        }
-        System.out.println("YOur tax : "+tax);
     }
 }
 
