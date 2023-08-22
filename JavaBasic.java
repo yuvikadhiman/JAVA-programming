@@ -93,3 +93,4 @@ public class JavaBasic {
         System.out.println("YOur tax : "+tax);
     }
 }
+
