@@ -90,7 +90,7 @@ public class JavaBasic {
         else {
            tax=(int)(a*0.3);
         }
-        // System.out.println("YOur tax : "+tax);
+        System.out.println("YOur tax : "+tax);
     }
 }
 
