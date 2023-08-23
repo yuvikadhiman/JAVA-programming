@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JavaArrays",
+      "request": "launch",
+      "mainClass": "JavaArrays",
+      "projectName": "JAVA programming_55ac8be5"
+    },
+    {
+      "type": "java",
       "name": "JavaFunctions",
       "request": "launch",
       "mainClass": "JavaFunctions",
