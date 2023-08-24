@@ -196,47 +196,46 @@
 // }
 
 // -----------------Binary search-------------------
+// import java.util.Scanner;
+// public class JavaArrays {
 
-import java.util.Scanner;
-public class JavaArrays {
+//     public static int binarySearch(int array[],int key){
+//         int n=array.length;
+//         int start=0;
+//         int end=n-1;
+//         while(start<=end){
+//              int mid=(start+end)/2;
 
-    public static int binarySearch(int array[],int key){
-        int n=array.length;
-        int start=0;
-        int end=n-1;
-        while(start<=end){
-             int mid=(start+end)/2;
-
-             if(array[mid]==key){
-                return mid;
-             }
-             if(key>array[mid]){
-                start=mid+1;
-             }
-             else{
-                end=mid-1;
-             }
-         }
-        return -1;
-    }
-     public static void main (String args[]){
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter size of the array : ");
-        int n=sc.nextInt();
-        int array[]=new int[n];
-        System.out.println("enter elemets of array : ");
+//              if(array[mid]==key){
+//                 return mid;
+//              }
+//              if(key>array[mid]){
+//                 start=mid+1;
+//              }
+//              else{
+//                 end=mid-1;
+//              }
+//          }
+//         return -1;
+//     }
+//      public static void main (String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter size of the array : ");
+//         int n=sc.nextInt();
+//         int array[]=new int[n];
+//         System.out.println("enter elemets of array : ");
         
-        for (int i=0;i<n;i++){
-            array[i]=sc.nextInt();
-        }
-        System.out.println("enter the key to search : ");
-        int key=sc.nextInt();
-        int index=binarySearch(array,key);
-        if(index==-1){
-            System.out.println("Not found");
-        }
-        else{
-            System.out.println("Key at in :"+index);
-        }
-    }
-}
+//         for (int i=0;i<n;i++){
+//             array[i]=sc.nextInt();
+//         }
+//         System.out.println("enter the key to search : ");
+//         int key=sc.nextInt();
+//         int index=binarySearch(array,key);
+//         if(index==-1){
+//             System.out.println("Not found");
+//         }
+//         else{
+//             System.out.println("Key at in :"+index);
+//         }
+//     }
+// }
