@@ -239,3 +239,14 @@
 //         }
 //     }
 // }
+
+import java.util.Scanner;
+public class JavaArrays {
+
+    public static int binarySearch(int array[],int key){
+       
+    }
+     public static void main (String args[]){
+        
+    }
+}
