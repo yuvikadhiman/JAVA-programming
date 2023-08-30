@@ -1,20 +1,31 @@
+// inherihance
 public class JavaOOPS {
     public static void main(String args[]){
-        Pen p1=new Pen();
-        p1.setColor("red");
-        System.out.println("newcolor :"+p1.color);
-        p1.setTip(5);
-         
+      
+       Engineer s1=new Engineer();
+       s1.setEmployee("amazon", 1000000);
+       s1.setRole("deveopler");
+       s1.getEmployee();
     }
 } 
 
-class Pen{
-    public String color;
-    private int tip;
-    void setColor(String newColr){
-        color=newColr;
+class Employee{
+    int salary;
+    String company;
+    public void setEmployee(String company,int salary) {
+        this.company=company;
+        this.salary=salary;
     }
-    void setTip(int newTip){
-        tip=newTip;
+}
+class Engineer extends Employee{
+    String role;
+    public void setRole(String role) {
+        this.role = role;
     }
+    public void getEmployee() {
+        System.out.println("Role : "+role);
+         System.out.println("salary : "+salary);
+        System.out.println("company : "+company);
+    }
+
 }
