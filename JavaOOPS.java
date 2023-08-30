@@ -1,6 +1,7 @@
 // inherihance
 public class JavaOOPS {
     public static void main(String args[]){
+
        Client s1=new Client();
        s1.setEmployee("amazon", 1000000);
        s1.setRole("deveopler");
@@ -21,6 +22,7 @@ class Engineer extends Employee{
     public void setRole(String role) {
         this.role = role;
     }
+    
 }
 class Client extends Engineer {
    int client;
