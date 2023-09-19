@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AEvent",
+      "request": "launch",
+      "mainClass": "AEvent",
+      "projectName": "JAVA programming_55ac8be5"
+    },
+    {
+      "type": "java",
+      "name": "JavaGUI",
+      "request": "launch",
+      "mainClass": "JavaGUI",
+      "projectName": "JAVA programming_55ac8be5"
+    },
+    {
+      "type": "java",
       "name": "javaCollections",
       "request": "launch",
       "mainClass": "javaCollections",
